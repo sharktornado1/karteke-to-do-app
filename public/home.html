@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href = "/css/style.css">
+        <title>To-do App</title>
+    </head>
+    <body>
+        <div class="container">
+            
+            <div class="sidebar-header">Lists</div>
+            <div class="sidebar" id="sidebar">
+                <div class="sidebar-list-container" id="sidebar-list-container"></div>
+                <div class="sidebar-addlist-container" id="sidebar-addlist-container"><p>+ Add a new List</p></div>
+            </div>
+            <div class="main-content" id="main-content">
+                <div class="addtask-container" id="addtask-container">
+                    <p>+ Add a new task</p>
+                </div>
+            </div>
+            <div class="addtask-popup" id="addtask-popup">
+                <div class="addtask-popup-content">
+                    <span class="close" id="closePopup">&times;</span>
+                    <h2 class="form-title">Add a new task</h2>
+                    <form id="addtask-form">
+                        <input type="text" id="task-title" name="task-title" placeholder="Title">
+                        <textarea id="task-description" name="task-description" placeholder="Description"></textarea>
+                        <button type="submit" id="task-submit-button">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="header">
+                <p id="app-developed-by">App developed by Karteke Rawal</p>
+                <p id="header-text">Welcome user!</p>
+                <p id="logout-link">logout</p>
+            </div>
+            <div class="footer">
+            </div>
+        </div>
+        
+        <script src="js/todo.js"></script>
+    </body>
+</html>
